@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing scale -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">12dp</dimen>
+    <dimen name="space_l">16dp</dimen>
+    <dimen name="space_xl">24dp</dimen>
+    <dimen name="space_xxl">32dp</dimen>
+    <dimen name="screen_padding">24dp</dimen>
+
+    <!-- Shape -->
+    <dimen name="radius_pill">28dp</dimen>
+    <dimen name="radius_card">16dp</dimen>
+
+    <!-- Components -->
+    <dimen name="button_height">54dp</dimen>
+    <dimen name="logo_size">96dp</dimen>
+    <dimen name="role_card_height">72dp</dimen>
+</resources>

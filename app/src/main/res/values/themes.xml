@@ -1,8 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MET" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Base application theme: light only, built on the M.E.T palette. -->
+    <style name="Base.Theme.MET" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/met_royal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/met_field_fill</item>
+        <item name="colorOnPrimaryContainer">@color/met_navy</item>
+        <item name="colorSecondary">@color/met_orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">@color/met_navy</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorError">@color/met_error</item>
+        <item name="android:colorBackground">@color/met_background</item>
+        <item name="colorSurface">@color/met_card</item>
+        <item name="colorOnSurface">@color/met_text_dark</item>
+        <item name="colorOnSurfaceVariant">@color/met_text_gray</item>
+        <item name="colorOutline">@color/met_field_stroke</item>
+
+        <item name="android:windowBackground">@color/met_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="textInputStyle">@style/Widget.MET.TextInput</item>
+        <item name="checkboxStyle">@style/Widget.MET.CheckBox</item>
     </style>
 
     <style name="Theme.MET" parent="Base.Theme.MET" />

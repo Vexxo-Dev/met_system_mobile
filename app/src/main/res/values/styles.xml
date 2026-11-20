@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Typography ===================== -->
+    <style name="TextAppearance.MET.Display" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.MET.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/met_navy</item>
+    </style>
+
+    <style name="TextAppearance.MET.Subtitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/met_text_gray</item>
+    </style>
+
+    <style name="TextAppearance.MET.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/met_text_dark</item>
+    </style>
+
+    <style name="TextAppearance.MET.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/met_text_gray</item>
+    </style>
+
+    <style name="TextAppearance.MET.Link" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/met_royal</item>
+    </style>
+
+    <style name="TextAppearance.MET.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- ===================== Shapes ===================== -->
+    <style name="ShapeAppearance.MET.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.MET.Card" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_card</item>
+    </style>
+
+    <!-- ===================== Inputs ===================== -->
+    <style name="Widget.MET.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/met_field_fill</item>
+        <item name="boxStrokeColor">@color/met_textinput_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_pill</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_pill</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_pill</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_pill</item>
+        <item name="startIconTint">@color/met_navy</item>
+        <item name="endIconTint">@color/met_navy</item>
+        <item name="hintTextColor">@color/met_royal</item>
+        <item name="android:textColorHint">@color/met_text_gray</item>
+        <item name="errorTextColor">@color/met_error</item>
+        <item name="hintEnabled">true</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MET.TextInput</item>
+    </style>
+
+    <style name="ThemeOverlay.MET.TextInput" parent="">
+        <item name="colorPrimary">@color/met_royal</item>
+        <item name="editTextStyle">@style/Widget.MET.TextInputEditText</item>
+    </style>
+
+    <style name="Widget.MET.TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/met_text_dark</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="Widget.MET.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/met_royal</item>
+        <item name="android:textColor">@color/met_text_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ===================== Buttons ===================== -->
+    <!-- Primary call to action: navy → royal gradient pill with trailing arrow -->
+    <style name="Widget.MET.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.MET.Button</item>
+        <item name="icon">@drawable/ic_arrow_forward</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconPadding">10dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Social sign-in (Google / Microsoft): white pill with outline -->
+    <style name="Widget.MET.Button.Social" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">50dp</item>
+        <item name="backgroundTint">@color/met_card</item>
+        <item name="strokeColor">@color/met_field_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">@color/met_text_dark</item>
+        <item name="android:textAppearance">@style/TextAppearance.MET.Body</item>
+        <item name="android:textSize">15sp</item>
+        <item name="iconTint">@null</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconPadding">10dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="rippleColor">@color/met_field_fill</item>
+    </style>
+
+    <!-- Text-only link button (e.g. "Forgot Password?", "Sign Up") -->
+    <style name="Widget.MET.Button.Link" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.MET.Link</item>
+        <item name="android:textColor">@color/met_royal</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="iconTint">@color/met_royal</item>
+        <item name="iconSize">18dp</item>
+        <item name="iconPadding">4dp</item>
+    </style>
+
+    <!-- ===================== Role selector card ===================== -->
+    <style name="Widget.MET.RoleCard" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/role_card_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_role_card</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="Widget.MET.RoleCard.Icon" parent="">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="tint">@color/met_role_content</item>
+    </style>
+
+    <style name="Widget.MET.RoleCard.Label" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/met_role_content</item>
+    </style>
+</resources>

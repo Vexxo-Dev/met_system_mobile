@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ===== M.E.T design system palette ===== -->
+    <!-- Primary Navy Blue: main background & headers -->
+    <color name="met_navy">#0B2D6B</color>
+    <!-- Royal Blue: buttons & interactive elements -->
+    <color name="met_royal">#1E63D6</color>
+    <!-- University Orange: highlights & accents -->
+    <color name="met_orange">#F57C00</color>
+    <!-- Light Background: screens background -->
+    <color name="met_background">#F5F8FF</color>
+    <!-- Card White: cards & containers -->
+    <color name="met_card">#FFFFFF</color>
+    <!-- Text Gray: secondary text -->
+    <color name="met_text_gray">#64748B</color>
+    <!-- Text Dark: main text -->
+    <color name="met_text_dark">#1E293B</color>
+
+    <!-- Supporting tints derived from the palette -->
+    <color name="met_field_fill">#EEF3FF</color>
+    <color name="met_field_stroke">#DCE4F5</color>
+    <color name="met_divider">#DCE2EE</color>
+    <color name="met_navy_overlay_top">#F20B2D6B</color>
+    <color name="met_navy_overlay_bottom">#B31E63D6</color>
+    <color name="met_error">#D93025</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
